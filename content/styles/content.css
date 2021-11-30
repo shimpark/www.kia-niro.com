@@ -1,0 +1,1027 @@
+@charset "utf-8";
+
+/*============================================================
+footer
+============================================================*/
+footer {
+    padding: 2rem 0;
+    color: #888;
+    background-color: #fafaf8;
+    border-top: 1px solid #e1e1e0;
+}
+.ft-wrap__lt {
+    position: relative;
+    padding-left: 9rem;
+}
+.ft-logo {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 6.5rem;
+}
+.ft-btn {
+    display: inline-block;
+    padding: 0.75rem 0;
+    width: 9.5rem;
+    text-align: center;
+    background-color: #ececea;
+}
+
+@media screen and (max-width: 575.98px) {
+    main + footer {
+        padding-bottom: 9rem;
+    }
+    .ft-wrap {
+        display: block;
+        text-align: center;
+    }
+    .ft-wrap__lt {
+        padding-left: 0;
+        width: 100%;
+    }
+    .ft-logo {
+        position: relative;
+        top: auto;
+        left: auto;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        width: 5.5rem;
+    }
+    .copyright {
+        padding-top: 1rem;
+    }
+    .ft-btn {
+        margin-top: 1rem;
+        padding: 1rem 0;
+        width: 11.5rem;
+    }
+}
+
+/*============================================================
+main
+============================================================*/
+main {
+    letter-spacing: -1px;
+}
+/* 플로팅 메뉴
+============================================================*/
+.main-flt-menu-list {
+    position: fixed;
+    top: 5rem;
+    right: 14%;
+    padding: 0 5px;
+    width: 5rem;
+    background-color: #f3c300;
+    border-radius: 10px;
+    z-index: 5;
+}
+.main-flt-menu {
+    display: block;
+    padding: 1rem 0;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: #000;
+    line-height: 1.4;
+    text-align: center;  
+}
+.main-flt-menu-list li + li .main-flt-menu {
+    border-top: 1px solid #46525d;
+}
+.main-flt-menu-list a.box {
+    position: relative;
+    z-index: 1;
+}
+.main-flt-menu-list a.box::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 61.29%;
+    background: #c29c00;
+    z-index: -1;
+    border-radius: 2.25rem;
+}
+@media screen and (max-width: 1919.98px) {
+    .main-flt-menu-list {
+        right: 20px;
+    }
+}
+@media screen and (max-width: 575.98px) {
+    .main-flt-menu-list {
+        display: flex;
+        flex-wrap: wrap;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: auto;
+        padding: 0;
+        width: 100%;
+        background-color: #13202c;
+        border-radius: 0;
+    }
+    .main-flt-menu-list li {
+        position: relative;
+        width: 33.33%;
+        height: 7rem;
+    }
+    .main-flt-menu-list li:first-child {
+        background-color: #1e262a;
+    }
+    .main-flt-menu-list li:nth-child(2) {
+        background-color: #f3c300;
+    }
+    .main-flt-menu-list li:last-child {
+        background-color: #6d6e71;
+    }
+    .main-flt-menu {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 100%;
+        font-size: 1.1rem;
+        color: #fff;
+    }
+    .main-flt-menu-list li + li .main-flt-menu {
+        border-top: 0;
+    }
+    .main-flt-menu-list li:nth-child(2) .main-flt-menu {
+        color: #000 !important;
+    }
+    .main-flt-menu-list a.box::before {
+        display: none;
+    }
+}
+/* 비쥬얼
+============================================================*/
+.main-vsl-area {
+    height: 54.65rem;
+    background: url("../images/main-visual-bg.jpg") no-repeat center top;
+    background-size: cover;
+}
+.main-vsl-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+}
+.main-vsl-label {
+    display: inline-block;
+    padding: 0.75rem 1.25rem 6px 1.25rem;
+}
+.main-vsl-tit {
+    width: 32.95rem;
+}
+.main-vsl-txt {
+    padding-top: 1.2rem;
+    line-height: 1.4;
+}
+.main-vsl-txt em {
+    display: inline-block;
+    font-style: normal;
+    border-bottom: 4px solid #f5cb20;
+}
+@media all and (min-width:768px) and (max-width:1024px) {
+    .main-vsl-area {
+        height: 39.65rem;
+    }
+    .main-vsl-cont {
+        padding-top: 3rem;
+    }
+    .main-vsl-label {
+        font-size: 1.3rem;
+    }
+    .main-vsl-tit {
+        width: 22.95rem;
+    }
+    .main-vsl-txt {
+        font-size: 1.2rem;
+    }
+    .main-vsl-txt strong {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 575.98px) {
+    .main-vsl-area {
+        height: 47.5rem;
+        background: #e4ebf3 url("../images/main-visual-bg-mo.jpg") no-repeat center top;
+        background-size: cover;
+    }
+    .main-vsl-label {
+        padding: 0.75rem 1rem;
+        border-width: 1px;
+    }
+    .main-vsl-tit {
+        width: 16rem;
+    }
+    .main-vsl-txt em {
+        border-width: 2px;
+    }
+    .main-vsl-txt,
+    .main-vsl-txt strong {
+        font-size: 1.2rem;
+    }
+    .main-vsl-txt strong {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 375.98px) {
+    .main-vsl-area {
+        height: 43rem;
+    }
+}
+@media screen and (max-width: 360.98px) {
+    .main-vsl-area {
+        height: 41.5rem;
+    }
+}
+@media screen and (max-width: 320.98px) {
+    .main-vsl-area {
+        height: 37rem;
+    }
+    .main-vsl-txt,
+    .main-vsl-txt strong {
+        font-size: 1.1rem;
+    }
+    .main-vsl-txt strong {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 280.98px) {
+    .main-vsl-area {
+        height: 32rem;
+    }
+    .main-vsl-txt {
+        font-size: 1rem;
+    }
+    .main-vsl-txt strong {
+        font-size: 1.1rem;
+    }
+}
+/* content common style
+============================================================*/
+.main-cont-area {
+    padding: 6rem 0;
+}
+.main-cont-tit {
+    line-height: 1.5;
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 575.98px) {
+    .main-cont-area {
+        padding: 5rem 0;
+    }
+    .main-cont-tit {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+        font-size: 1.5rem;
+        line-height: 1.4;
+        text-align: center;
+    }
+}
+/* 미션 리스트
+============================================================*/
+.main-msn-area {
+    padding-top: 0;
+    background: url("../images/main-mission-bg.jpg") no-repeat center top;
+    background-size: cover;
+}
+.main-msn-list li + li {
+    padding-top: 1rem;
+}
+.main-msn-item {
+    position: relative;
+    padding: 1.63rem 1.5rem 1.63rem 0rem;
+    width: 100%;
+    background-color: #2a3439;
+    border-radius: 25.75rem;
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.11);
+}
+.main-msn-label {
+    position: relative;
+    display: inline-block;
+    padding: 0.35rem 2.1rem 0.35rem 1.4rem;
+    width: 10.75rem;
+    line-height: 1.4;
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+}
+.main-msn-label::before,
+.main-msn-label::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+}
+.main-msn-label::before {
+    right: 0;
+    width: 1.5rem;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.main-msn-label::after {
+    width: 93%;
+    height: 245%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #1e262a;
+    z-index: -1;
+    border-radius: 5.375rem;
+}
+
+.active .main-msn-label::before,
+.open .main-msn-label::before {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.active .main-msn-tit {
+    font-size: 1.5rem;
+}
+.active .main-msn-label::after {
+    background-color: #f5f5f6;
+}
+.main-msn-cont {
+    position: relative;
+    width: calc(100% - 10.75rem);
+}
+.main-msn-tit {
+    display: block;
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.7);
+}
+.main-msn-tit .kakaomap-ico {
+    display: inline-block;
+    margin-right: 1rem;
+    width: 6.5rem;
+    vertical-align: middle;
+}
+.main-msn-state {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #f3c300;
+    text-align: center;
+}
+.main-msn-item.active {
+    background-color: #fff;
+}
+.active .main-msn-label,
+.active .main-msn-tit,
+.active .main-msn-state {
+    color: #666;
+}
+.active .main-msn-state {
+    right: -1%;
+    padding: 0.4rem 1.25rem;
+    color: #fff;
+    line-height: 1.5;
+    border-radius: 4rem;
+    background-color: #f3c300;
+}
+.main-msn-item.open {
+    width: 100%;
+    background-color: #f3c300;
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.11);
+}
+.main-msn-item.open .main-msn-label {
+    color: #000;
+}
+
+.open .main-msn-label::after {
+    background-color: #f5cf00;
+}
+.main-msn-open-ico {
+    display: inline-block;
+    position: absolute;
+    top: -0.75rem;
+    left: 4.5rem;
+    width: 3rem;
+}
+.main-msn-open-image,
+.open .main-msn-state {
+    display: none;
+}
+.main-msn-open-image {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 8.4rem;
+    font-size: 0;
+    pointer-events: none;
+}
+.open .main-msn-open-image {
+    display: block;
+}
+.open .main-msn-tit {
+    font-size: 1.5rem;
+    color: #000;
+}
+.open .main-msn-state {
+    padding-right: 1rem;
+    color: #fff;
+    background: url("../images/main-mission-arw-open.png") no-repeat center right;
+    background-size: 0.75rem;
+}
+
+@media screen and (max-width: 991.98px) {
+    .main-msn-tit {
+        width: calc(100% - 9rem);
+    }
+}
+@media screen and (max-width: 575.98px) {
+    .main-msn-item {
+        align-items: center;
+        width: 100%;
+        border-radius: 18px;
+        box-shadow: 0 7px 0 rgba(0, 0, 0, 0.11);
+    }
+    .main-msn-tit {
+        width: 100%;
+        min-height: 3.5rem;
+        font-size: 1.3rem;
+    }
+    .main-msn-tit .kakaomap-ico {
+        margin-right: 0.5rem;
+        width: 6rem;
+    }
+    .main-msn-state {
+        position: relative;
+        top: auto;
+        right: auto;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        line-height: 1.5;
+    }
+    .open .main-msn-tit {
+        font-size: 1.3rem;
+    }
+    .main-msn-area {
+        background: url(../../content/images/main-mission-mb-bg.jpg);
+        background-size: cover;
+    }
+    .main-msn-cont {
+        display: flex;
+        align-items: center;
+    }
+    .main-msn-label::after {
+        width: 93%;
+        height: 170%;
+        border-radius: 20px;
+    }
+    .active .main-msn-tit {
+        font-size: 1.3rem;
+    }
+    .active .main-msn-state {
+        border-radius: 1rem;
+    }
+    .main-msn-open-image {
+        right: -12%;
+        width: 44%;
+    }
+    .main-msn-item.open {
+        box-shadow: 0 7px 0 rgba(0, 0, 0, 0.11);
+    }
+}
+@media screen and (max-width: 375.98px) {
+    .main-msn-label {
+        width: 7.75rem;
+    }
+    .main-msn-cont {
+        width: calc(100% - 7.75rem);
+    }
+    .active .main-msn-state {
+        padding: 0.4rem 0.8rem;
+    }
+}
+@media screen and (max-width: 280.98px) {
+    .main-msn-label {
+        width: 7rem;
+    }
+    .main-msn-cont {
+        width: calc(100% - 7rem);
+        display: block;
+    }
+    .main-msn-state {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .active .main-msn-state {
+        position: absolute;
+        left: inherit;
+        right: -18px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .main-msn-open-image {
+        right: -22%;
+    }
+}
+/* 리워드
+============================================================*/
+.main-reward-area {
+    background: url("../images/main-reward-bg.jpg") no-repeat center top;
+    background-size: cover;
+}
+[class^="main-reward-wrap__"] {
+    overflow: hidden;
+    position: relative;
+    border-radius: 2rem;
+}
+.main-reward-wrap__top {
+    background-color: #fff;
+}
+.main-reward-wrap__btm {
+    margin-top: 0.5rem;
+    background: url("../images/main-reward-daily-bg.png") no-repeat center top;
+    background-size: cover;
+}
+[class^="main-reward-wrap__"] figure {
+    font-size: 0;
+}
+.main-reward-tit {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    line-height: 1.4;
+}
+.main-reward-tit strong {
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-top: 0.5rem;
+}
+.main-reward-wrap__top .main-reward-cont {
+    padding: 3rem 0 2rem;
+    text-align: center;
+    background-color: #faf9f9;
+}
+.text-box {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+@media screen and (max-width: 575.98px) {
+    .main-reward-wrap__btm {
+        background: url("../images/main-reward-daily-bg-mo.png") no-repeat center top;
+        background-size: cover;
+    }
+    .main-reward-tit {
+        top: 3.5rem;
+        left: 1.5rem;
+        font-size: 15px;
+    }
+    .main-reward-tit strong {
+        margin-top: 0.2rem;
+        border-width: 2px;
+    }
+    .main-reward-wrap__top .main-reward-cont {
+        padding: 2.5rem 0;
+        line-height: 1.4;
+    }
+    .main-reward-area {
+        background: url("../images/main-reward-bg-mo.jpg") no-repeat center top;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 375.98px) { 
+    .main-reward-tit { 
+        top: 2.5rem;
+        left: 1.2rem;
+    }
+}
+@media screen and (max-width: 320.98px) { 
+    .main-reward-tit {
+        font-size: 13px;
+    }
+    .main-reward-tit strong {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 280.98px) { 
+    .main-reward-tit {
+        top: 2rem;
+        left: 0.5rem;
+        font-size: 12px;
+    }
+}
+/* 유의사항 & 문의처
+============================================================*/
+.main-etc-wrap + .main-etc-wrap {
+    padding-top: 6rem;
+}
+.main-caution-txt {
+    line-height: 1.4;
+    background: url("../images/main-caution-text-mark.png") no-repeat center left;
+    background-size: 0.75rem;
+}
+.main-caution-txt + .main-caution-txt {
+    margin-top: 0.75rem;
+}
+
+@media screen and (max-width: 575.98px) {
+    .main-caution-txt {
+        background-position: left top 0.5rem;
+    }
+}
+
+/*============================================================
+modal
+============================================================*/
+/* 쿠폰 번호 입력 모달
+============================================================*/
+.modal-coupon-msn-label {
+    display: inline-block;
+    padding: 0.75rem 0;
+    margin-bottom: 0.5rem;
+    width: 8rem;
+    color: #fff;
+    background-color: #9ea1a2;
+    border-radius: 2rem;
+}
+.form-input-coupon {
+    text-align: center;
+}
+.form-input-coupon:read-only {
+    color: #fff;
+    background-color: #667c90;
+}
+
+@media (max-width: 575.98px) {
+    .modal-coupon-msn-label {
+        margin-bottom: 0.75rem;
+        width: 10rem;
+    }
+}
+/* 즉석 당첨 경품 결과
+============================================================*/
+[class^="modal-prize-hd__"] {
+    text-align: center;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+.modal-prize-hd__win {
+    padding: 3rem 2.5rem 0;
+    background-image: url("../images/modal-prize-hd-win-bg.png");
+}
+.modal-prize-hd__fail {
+    padding: 3rem 2.5rem 6rem;
+    background-image: url("../images/modal-prize-hd-fail-bg.png");
+}
+[class^="modal-prize-hd__"] .modal-hd-greet {
+    padding-bottom: 2.5rem;
+}
+[class^="modal-prize-hd__"] .modal-hd-greet::after {
+    display: none;
+}
+[class^="modal-prize-hd__"] .modal-hd-tit {
+    font-size: 3.5rem;
+}
+.modal-prize-label {
+    display: inline-block;
+    padding: 0.75rem 0;
+    margin-bottom: 1rem;
+    width: 12rem;
+    background-color: #f3c300;
+    border-radius: 2rem;
+}
+.modal-prize-gift {
+    display: inline-block;
+    margin-top: 1rem;
+    max-width: 14.9rem;
+}
+.modal-prize-txt {
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    line-height: 1.2;
+    border-bottom: 1px solid #919ba5;
+}
+
+@media screen and (max-width: 991.98px) {
+    .modal-prize-hd__win {
+        background-position: center top -5rem;
+    }
+    .modal-prize-hd__fail {
+        background-position: center top -10rem;
+    }
+}
+@media screen and (max-width: 575.98px) {
+    .modal-prize-hd__win {
+        background-position: center top;
+        background-size: 130%;
+    }
+    .modal-prize-hd__fail {
+        padding-bottom: 3rem;
+        background-position: center top;
+        background-size: 130%
+    }
+    .modal-prize-label {
+        width: 15rem;
+    }
+    .modal-prize-gift {
+        margin-top: 1.5rem;
+    }
+}
+/* 내 쿠폰 응모 내역
+============================================================*/
+.modal-history-tab-list {
+    padding: 0 1.5rem 1rem;
+}
+.modal-history-tab-list li {
+    width: 100%;
+}
+.modal-history-tab {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0;
+    margin: 5px 0;
+    text-align: center;
+    color: #000;
+    background-color: #f0f0f0;
+    border-radius: 0.75rem;
+}
+.modal-history-tab-badge {
+    display: block;
+    width: 24.75%;
+    font-size: 0;
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+}
+.modal-history-tab-badge img {
+    width: 4.4rem;
+}
+.active .modal-history-tab {
+    /* color: #05141f; */
+    /* background-color: #f3c300; */
+}
+.modal-history-cont {
+    display: none;
+}
+.modal-history-prize-wrap {
+    padding: 1rem 1.5rem 4rem;
+}
+.modal-history-prize-box {
+    position: relative;
+    height: 8.5rem;
+    line-height: 1.4;
+    background-color: #f0f0f0;
+    border-top: 4px solid #f3c300;
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+}
+.modal-history-prize-box > p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+[class^="modal-history-prize__"] {
+    padding: 0.75rem 0 0.75rem 4.5rem;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 3.5rem;
+}
+.modal-history-prize__coffee {
+    background-image: url("../images/modal-prize-coffee.png");
+}
+.modal-history-prize__pocari {
+    background-image: url("../images/modal-prize-pocari.png");
+}
+.modal-history-center-wrap {
+    padding: 0 1.5rem 4rem;
+}
+.modal-history-center-list {
+    margin-top: 2rem;
+    border-top: 2px solid #667c90;
+}
+.modal-history-center-list li {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #d1d7dd;
+}
+.modal-history-center-list .delete-btn {
+    display: inline-block;
+    padding: 0.5rem 0;
+    width: 4rem;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 0.5rem;
+}
+[class^="modal-history-reward-wrap__"] {
+    padding: 4rem 0 5rem;
+    text-align: center;
+    background-color: #e0e5e9;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.modal-history-reward-wrap__win {
+    background: #e0e5e9 url("../images/modal-history-reward-win-bg.png") no-repeat center top;
+    background-size: cover;
+}
+.modal-history-reward-label {
+    display: inline-block;
+    padding: 0.5rem 0;
+    width: 13rem;
+    color: #fff;
+    background-color: #5d7d2b;
+    border-radius: 2rem;
+}
+.modal-history-reward-tit {
+    padding: 2rem 0 1.5rem;
+    font-size: 2.8rem;
+}
+.modal-history-reward {
+    display: inline-block;
+    width: 19rem;
+}
+.modal-history-reward-wrap__fail h4 {
+    line-height: 1.4;
+}
+.modal-history-tab-list .text {
+    text-align: left;
+    width: calc(100% - 7.5rem);
+}
+.modal-history-tab-list .text span {
+    padding-left: 3.2rem;
+}
+
+.modal-history-tab-list .title-text {
+    padding: 0.71rem 0 0.42rem 0;
+    display: block;
+    color: #585a5d;
+    line-height: 1.4;
+}
+/* no-check */
+.modal-history-tab-list li .no-gift,
+.modal-history-tab-list li .check,
+.modal-history-tab-list li .gift-box {
+    display: none;
+}
+/* check */
+.modal-history-tab-list li.check .modal-history-tab {
+    background-color: #f3c300;
+}
+.modal-history-tab-list li.check .no-check,
+.modal-history-tab-list li.check .no-gift {
+    display: none;
+}
+.modal-history-tab-list li.check .check {
+    display: inline-block;
+}
+.gift-box {
+    display: none;
+    align-items: center;
+}
+.gift-box img {
+    margin-left: 1rem;
+    width: 5.8rem;
+}
+.modal-history-tab-list .gift-box span {
+    padding-left: 0;
+    line-height: 1.4;
+}
+/* check gift */
+.modal-history-tab-list li.check.gift .gift-box {
+    display: flex;
+}
+/* check no-gift */
+.modal-history-tab-list li.check.no-gift .no-gift {
+    display: block;
+}
+@media screen and (max-width: 575.98px) {
+    .modal-history-tab {
+        padding: 1.75rem 0;
+    }
+    .modal-history-prize-box > p {
+        width: 80%;
+    }
+    .modal-history-center-list li {
+        padding: 1.75rem 0;
+    }
+    .modal-history-reward-label {
+        padding: 0.75rem 0;
+        width: 15rem;
+    }
+    .modal-history-reward {
+        width: 22rem;
+    }
+    .modal-history-tab-list .title-text {
+        padding: 0.15rem 0;
+    }
+    .modal-history-tab-list .text {
+        width: calc(100% - 5.5rem);
+    }
+    .gift-box img {
+        margin-left: 0.2rem;
+    }
+    .modal-history-tab-list .text span {
+        padding-left: 2rem;
+    }
+}
+@media screen and (max-width: 360.98px) { 
+    .modal-history-tab-list .text span {
+        padding-left: 1rem;
+    }
+}
+@media screen and (max-width: 320.98px) { 
+    .modal-history-tab-badge {
+        width: 25.75%;
+    }
+}
+@media screen and (max-width: 280.98px) { 
+    .modal-history-tab-badge {
+        width: 31.75%;
+    }
+    .modal-history-reward {
+        width: auto;
+    }
+    .modal-history-tab-list .text span {
+        padding-left: 0;
+    }
+    .modal-history-tab-list .text {
+        text-align: center;
+    }
+    .modal-history-tab-list li.check.gift .gift-box {
+        flex-direction: column;
+    }
+}
+
+/* 스폐셜 리워드 당첨자 발표
+============================================================*/
+#modalRewardWin .modal-hd {
+    padding-bottom: 4.5rem;
+    background: #fff url("../images/modal-rewardwin-hd-bg.png") no-repeat center top;
+    background-size: 100%;
+}
+#modalRewardWin .modal-cont {
+    padding-top: 0;
+    background: #fff;
+    background-size: 100%;
+}
+
+@media screen and (max-width: 991.98px) {
+    #modalRewardWin .modal-hd {
+        background-position: center top -3rem;
+    }
+}
+@media screen and (max-width: 575.98px) {
+    #modalRewardWin .modal-hd {
+        background-position: center top;
+        background-size: 130%;
+    }
+}
+
+/* 로그인 팝업
+============================================================*/
+#modalLogin .modal-hd {
+    padding-bottom: 1.5rem;
+}
+
+#modalLogin .modal-cont {
+    padding: 2rem 2.5rem 3rem;
+}
+
+/* 개인정보 입력 팝업
+============================================================*/
+#modalPrivacy .modal-hd {
+    padding-bottom: 2rem;
+}
+#modalPrivacy .form-input-txt {
+    padding: 0;
+}
+
+/* 응모 중복 체크 팝업
+============================================================*/
+#modalCheck .modal-hd {
+    padding-bottom: 1.5rem;
+}
+
+#modalCheck .modal-btn-box {
+    margin-top: 2rem;
+}
+
+/* 내 쿠폰 응모 내역 모달
+============================================================*/
+#modalHistory .fs18.txt-indent {
+    letter-spacing: -1px;
+}
+#modalHistory .modal-hd {
+    padding-bottom: 2rem;
+}
+#modalHistory .modal-history-prize-wrap {
+    padding-top: 0.5rem;
+}

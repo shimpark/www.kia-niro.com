@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* font family : Kia Signature */
+@font-face {
+    font-family: 'KiaSignature';
+    font-weight: 300;
+    src: url('../fonts/KiaSignatureLight.eot'),
+    url('../fonts/KiaSignatureLight.eot#iefix') format('embedded-opentype'),
+    url('../fonts/KiaSignatureLight.woff') format('woff'),
+    url('../fonts/KiaSignatureLight.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'KiaSignature';
+    font-weight: 400;
+    src: url('../fonts/KiaSignatureRegular.eot'),
+    url('../fonts/KiaSignatureRegular.eot#iefix') format('embedded-opentype'),
+    url('../fonts/KiaSignatureRegular.woff') format('woff'),
+    url('../fonts/KiaSignatureRegular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'KiaSignature';
+    font-weight: 700;
+    src: url('../fonts/KiaSignatureBold.eot'),
+    url('../fonts/KiaSignatureBold.eot#iefix') format('embedded-opentype'),
+    url('../fonts/KiaSignatureBold.woff') format('woff'),
+    url('../fonts/KiaSignatureBold.woff2') format('woff2');
+}
